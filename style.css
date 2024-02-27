@@ -317,6 +317,124 @@
   }
 }
 
+.rooms {
+  text-align: center;
+}
+.rooms h5 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: #777777;
+}
+.rooms h1 {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: Old Standard TT, sans-serif;
+  margin: 24px 0;
+}
+@media only screen and (min-width: 1000px) {
+  .rooms h1 {
+    margin-bottom: 75px;
+  }
+}
+.rooms__icons {
+  background-color: white;
+  height: 29px;
+  max-width: 75%;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1000px) {
+  .rooms__icons {
+    max-width: 310px;
+  }
+}
+.rooms__icons img {
+  vertical-align: middle;
+}
+.rooms__icons img:not(:nth-last-of-type(7)) {
+  margin-left: 15px;
+}
+.rooms__slider {
+  position: relative;
+  height: 244px;
+  width: 100%;
+  background-color: #E5E5E5;
+  top: -14px;
+  z-index: -1;
+}
+.rooms__slider--left, .rooms__slider--right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+}
+.rooms__slider--left {
+  left: 0;
+}
+.rooms__slider--right {
+  right: 0;
+}
+@media only screen and (min-width: 1000px) {
+  .rooms__slider {
+    width: 770px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.rooms__description {
+  padding: 19px 24px;
+  margin: auto 20px;
+  position: relative;
+  top: -35px;
+  background-color: #FFFFFF;
+}
+@media only screen and (min-width: 1000px) {
+  .rooms__description {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .rooms__description__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 60%;
+  }
+  .rooms__description h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 15px;
+  }
+  .rooms__description h3 span {
+    font-size: 16px;
+  }
+}
+.rooms__description h4 {
+  font-family: Old Standard TT, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  margin-bottom: 12px;
+}
+.rooms__description p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 12px;
+}
+.rooms__description h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #BEAD8E;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
