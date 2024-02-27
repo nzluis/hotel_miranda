@@ -505,6 +505,98 @@
   width: 216px;
 }
 
+.facilities {
+  text-align: center;
+}
+.facilities h5 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: #777777;
+  margin-top: 60px;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities h5 {
+    margin-top: 118px;
+  }
+}
+.facilities h1 {
+  font-size: 56px;
+  font-family: Old Standard TT, sans-serif;
+  font-weight: 400;
+  letter-spacing: -1.2px;
+  margin: 24px 24px 32px 24px;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities h1 {
+    margin-bottom: 40px;
+  }
+}
+.facilities__grid {
+  display: flex;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 47px;
+  }
+}
+.facilities__grid__card {
+  text-align: left;
+  margin-left: 38px;
+  min-width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities__grid__card {
+    max-width: 370px;
+    min-width: unset;
+  }
+}
+.facilities__grid__card__img_container {
+  min-height: 188px;
+  position: relative;
+}
+.facilities__grid__card--rating {
+  position: absolute;
+  left: 0;
+  bottom: 38px;
+}
+.facilities__grid__card--number {
+  position: absolute;
+  top: 0;
+  right: 65px;
+}
+.facilities__grid__card h3 {
+  font-family: Old Standard TT, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -0.9;
+  margin-bottom: 28px;
+}
+.facilities__grid__card p {
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 75%;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities__grid__card p {
+    margin-bottom: 52px;
+  }
+}
+.facilities__dots_selection {
+  margin-bottom: 64px;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities__dots_selection {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
