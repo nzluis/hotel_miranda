@@ -11,6 +11,7 @@
   position: sticky;
   top: 0;
   background-color: white;
+  z-index: 100;
 }
 @media only screen and (min-width: 1000px) {
   .navbar {
@@ -202,6 +203,22 @@
 .about_us {
   margin: 98px 20px 60px 20px;
 }
+@media only screen and (min-width: 1000px) {
+  .about_us {
+    margin: 120px auto;
+    width: calc(80% - 10px);
+    max-width: 900px;
+    display: flex;
+    gap: 80px;
+    flex-direction: row-reverse;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .about_us__description {
+    position: relative;
+    top: 7em;
+  }
+}
 .about_us__description h5 {
   font-size: 13px;
   letter-spacing: 2.8px;
@@ -225,30 +242,50 @@
   width: 216px;
   margin-bottom: 60px;
 }
-.about_us__features {
+@media only screen and (min-width: 1000px) {
+  .about_us__features {
+    display: flex;
+    gap: 30px;
+  }
+}
+.about_us__features__feature {
   text-align: center;
   width: 270px;
   margin: 0 auto;
 }
-.about_us__features__image {
+@media only screen and (min-width: 1000px) {
+  .about_us__features__feature:nth-child(1) {
+    margin-bottom: 55px;
+  }
+}
+.about_us__features__feature__image {
   height: 300px;
   width: 100%;
   object-fit: cover;
 }
-.about_us__features__item {
+.about_us__features__feature__item {
   height: 300px;
+  position: relative;
 }
-.about_us__features__item img {
+.about_us__features__feature__item img {
   margin-top: 54px;
 }
-.about_us__features__item h3 {
+.about_us__features__feature__item__back_image {
+  position: absolute;
+  width: 144px;
+  height: 105px;
+  right: 0;
+  color: #F8F8F8;
+  z-index: -1;
+}
+.about_us__features__feature__item h3 {
   margin-top: 29px;
   margin-bottom: 21px;
   font-size: 30px;
   font-weight: 400;
   font-family: Old Standard TT, sans-serif;
 }
-.about_us__features__item p {
+.about_us__features__feature__item p {
   width: 200px;
   margin: 0 auto;
   line-height: 22px;
@@ -256,15 +293,28 @@
   font-size: 14px;
   font-weight: 400;
 }
-.about_us__features__item.dark {
+.about_us__features__feature__item.dark {
   background-color: #222222;
   color: white;
   padding-bottom: 50px;
   position: relative;
   top: -4px;
 }
-.about_us__features__item.dark p {
+.about_us__features__feature__item.dark p {
   color: white;
+}
+.about_us__features__feature:nth-child(1) {
+  margin-bottom: 45px;
+}
+@media only screen and (min-width: 1000px) {
+  .about_us__features__feature:nth-child(1) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .about_us__features__feature:nth-child(1) .about_us__features__feature__image,
+  .about_us__features__feature:nth-child(1) .about_us__features__feature__item {
+    position: relative;
+  }
 }
 
 * {
