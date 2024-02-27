@@ -39,6 +39,10 @@
 
         h5 {
             margin-left: 1em;
+
+            @media only screen and (min-width: 1000px) {
+                margin-left: 3em;
+            }
         }
 
         &__right {
@@ -86,4 +90,71 @@
 
 }
 
-.header {}
+.header {
+    padding: 75px 20px;
+    background-color: #333333;
+
+    &__container {
+        color: #FFFFFF;
+
+        h5 {
+            width: 75%;
+            letter-spacing: 2.8px;
+        }
+
+        h1 {
+            font-family: Old Standard TT;
+            font-size: 56px;
+            font-weight: 400;
+            margin: 40px 0 40px 0;
+
+        }
+
+        button {
+            display: block;
+            padding: 22px 45px;
+            border: none;
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:nth-last-of-type(2) {
+                background-color: #BEAD8E;
+                margin-bottom: 24px;
+            }
+
+            &:nth-last-of-type(1) {
+                background-color: #333333;
+                border: 2px solid #FFFFFF54
+            }
+        }
+
+        @media only screen and (min-width: 1000px) {
+            padding-top: 175px;
+            padding-bottom: 123px;
+            margin: 0 auto;
+            width: calc(80% - 10px);
+            max-width: 900px;
+
+            h5 {
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            h1 {
+                font-size: 120px;
+                font-weight: 400;
+            }
+
+            button {
+                display: inline;
+
+                &:nth-last-of-type(1) {
+                    margin-left: 30px;
+                }
+            }
+        }
+
+    }
+}
