@@ -199,6 +199,74 @@
   }
 }
 
+.about_us {
+  margin: 98px 20px 60px 20px;
+}
+.about_us__description h5 {
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  font-weight: 700;
+  color: #777777;
+  margin-bottom: 32px;
+}
+.about_us__description h1 {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: Old Standard TT, sans-serif;
+  margin-bottom: 16px;
+}
+.about_us__description p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.about_us__description button {
+  width: 216px;
+  margin-bottom: 60px;
+}
+.about_us__features {
+  text-align: center;
+  width: 270px;
+  margin: 0 auto;
+}
+.about_us__features__image {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.about_us__features__item {
+  height: 300px;
+}
+.about_us__features__item img {
+  margin-top: 54px;
+}
+.about_us__features__item h3 {
+  margin-top: 29px;
+  margin-bottom: 21px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: Old Standard TT, sans-serif;
+}
+.about_us__features__item p {
+  width: 200px;
+  margin: 0 auto;
+  line-height: 22px;
+  color: #111111;
+  font-size: 14px;
+  font-weight: 400;
+}
+.about_us__features__item.dark {
+  background-color: #222222;
+  color: white;
+  padding-bottom: 50px;
+  position: relative;
+  top: -4px;
+}
+.about_us__features__item.dark p {
+  color: white;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
