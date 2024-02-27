@@ -1,3 +1,32 @@
+.navbar {
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+.navbar__container {
+  display: flex;
+}
+@media only screen and (min-width: 1000px) {
+  .navbar__container__mobile_menu {
+    display: none;
+  }
+}
+.navbar__container h2 {
+  margin-left: 1em;
+}
+.navbar__container h5 {
+  margin-left: 1em;
+}
+.navbar__container__right {
+  position: absolute;
+  right: 0;
+  margin-right: 2em;
+}
+.navbar__container__right--search {
+  margin-left: 1.5em;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

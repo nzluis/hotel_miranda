@@ -1,0 +1,38 @@
+.navbar {
+
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+
+    &__container {
+        display: flex;
+
+        &__mobile_menu {
+            @media only screen and (min-width: 1000px) {
+                display: none
+            }
+        }
+
+        h2 {
+            margin-left: 1em;
+        }
+
+        h5 {
+            margin-left: 1em;
+        }
+
+        &__right {
+            position: absolute;
+            right: 0;
+            margin-right: 2em;
+        }
+
+        &__right--search {
+            margin-left: 1.5em;
+        }
+    }
+
+
+
+}
