@@ -1,3 +1,11 @@
+.margin_top {
+    @media only screen and (min-width: 1000px) {
+        height: 5em;
+        width: 100%;
+        background-color: black;
+    }
+}
+
 .navbar {
 
     padding: 1em;
@@ -5,10 +13,21 @@
     top: 0;
     background-color: white;
 
+    @media only screen and (min-width: 1000px) {
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
     &__container {
         display: flex;
+        align-items: center;
 
-        &__mobile_menu {
+        @media only screen and (min-width: 1000px) {}
+
+        &__button_menu {
             @media only screen and (min-width: 1000px) {
                 display: none
             }
@@ -31,8 +50,40 @@
         &__right--search {
             margin-left: 1.5em;
         }
+
+        &__menu {
+            ul {
+                list-style-type: none;
+            }
+
+            @media only screen and (max-width: 1000px) {
+                display: none;
+                position: absolute;
+                background-color: white;
+                width: 100%;
+                top: 4em;
+                left: 0;
+                padding: 1em;
+
+                li {
+                    &:not(:last-child) {
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 1000px) {
+
+                ul {
+                    display: flex;
+                    gap: 1em;
+                    margin-left: 4em;
+                }
+            }
+
+        }
     }
 
-
-
 }
+
+.header {}
