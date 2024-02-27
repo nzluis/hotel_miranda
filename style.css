@@ -434,6 +434,9 @@
   font-weight: 700;
   color: #BEAD8E;
 }
+.rooms__description h3 span {
+  font-size: 16px;
+}
 
 .intro_video {
   position: relative;
