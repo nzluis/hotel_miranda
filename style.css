@@ -626,6 +626,9 @@
 .stats__card h2 {
   font-size: 60px;
 }
+.stats__card h2 span {
+  font-size: 14px;
+}
 .stats__card h5 {
   font-size: 16px;
   color: #999999;
