@@ -890,8 +890,25 @@
         background-color: #F8F8F8;
         padding: 16px 20px;
 
-        :nth-child(1) {
-            padding-bottom: 24px;
+
+
+        &__container {
+            @media only screen and (min-width: 1000px) {
+                display: flex;
+                justify-content: space-between;
+                margin: 0 auto;
+                width: calc(80% - 10px);
+                max-width: 1000px;
+            }
+
+            :nth-child(1) {
+                padding-bottom: 24px;
+
+                @media only screen and (min-width: 1000px) {
+                    padding: unset;
+                }
+            }
         }
+
     }
 }
