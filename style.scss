@@ -1,4 +1,16 @@
-@use "./styles/home";
+// @use "./styles/home";
+@use "./styles/margin_top";
+@use "./styles/navbar";
+@use "./styles/header";
+@use "./styles/date_checker";
+@use "./styles/about_us";
+@use "./styles/rooms";
+@use "./styles/intro_video";
+@use "./styles/facilities";
+@use "./styles/menu";
+@use "./styles/slider";
+@use "./styles/stats";
+@use "./styles/footer";
 
 * {
     box-sizing: border-box;
