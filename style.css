@@ -103,6 +103,7 @@
 }
 .header__container {
   color: #FFFFFF;
+  position: relative;
 }
 .header__container h5 {
   width: 75%;
@@ -113,6 +114,36 @@
   font-size: 56px;
   font-weight: 400;
   margin: 40px 0 40px 0;
+}
+.header__container h2 {
+  font-size: 72px;
+  font-family: Old Standard TT, sans-serif;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: -2.16px;
+  margin: 40px 0 40px 0;
+}
+.header__container h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.5px;
+  color: #222222;
+  text-align: center;
+  padding: 16px 29px;
+  background-color: #FFFFFF;
+  position: absolute;
+  right: 0;
+  bottom: -115px;
+}
+@media only screen and (min-width: 1000px) {
+  .header__container h6 {
+    bottom: 0;
+    padding: 21px 51px;
+  }
+}
+.header__container h6 span {
+  color: #BDAC8D;
 }
 .header__container button {
   display: block;
