@@ -810,6 +810,7 @@
   .stats {
     display: flex;
     justify-content: space-between;
+    text-align: left;
     padding: 80px;
     margin: 0 auto;
     width: calc(80% - 10px);
@@ -907,6 +908,18 @@
 .footer__container__services {
   margin: 0 20px;
   list-style-position: inside;
+}
+@media only screen and (min-width: 1301px) {
+  .footer__container__services .first_column,
+  .footer__container__services .second_column {
+    margin-right: 80px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  .footer__container__services .first_column,
+  .footer__container__services .second_column {
+    margin-right: 5%;
+  }
 }
 .footer__container__services h5 {
   font-family: Old Standard TT, sans-serif;
