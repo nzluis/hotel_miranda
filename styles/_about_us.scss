@@ -18,7 +18,7 @@
         }
 
         h5 {
-            font-size: 13px;
+            font-size: 14px;
             letter-spacing: 2.8px;
             font-weight: 700;
             color: #777777;
@@ -26,7 +26,8 @@
         }
 
         h1 {
-            font-size: 56px;
+            font-size: 80px;
+            line-height: 90px;
             font-weight: 400;
             font-family: Old Standard TT, sans-serif;
             margin-bottom: 16px;
@@ -37,6 +38,7 @@
             font-weight: 400;
             color: #777777;
             margin-bottom: 24px;
+            max-width: 397px;
         }
 
         button {
@@ -73,6 +75,13 @@
             &__item {
                 height: 300px;
                 position: relative;
+
+                @media only screen and (min-width: 1000px) {
+                    &.strongteam {
+                        position: relative;
+                        top: -30px;
+                    }
+                }
 
                 img {
                     margin-top: 54px;
@@ -115,6 +124,12 @@
                     padding-bottom: 50px;
                     position: relative;
                     top: -4px;
+
+                    @media only screen and (min-width: 1000px) {
+                        position: relative;
+                        top: 30px
+                    }
+
                 }
             }
 

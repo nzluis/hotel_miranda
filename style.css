@@ -1,6 +1,6 @@
 @media only screen and (min-width: 1000px) {
   .margin_top {
-    height: 5em;
+    height: 100px;
     width: 100%;
     background-color: black;
   }
@@ -25,7 +25,7 @@
 .navbar__container {
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 90px;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__container__button_menu {
@@ -35,12 +35,24 @@
 .navbar__container h2 {
   margin-left: 1em;
 }
+@media only screen and (min-width: 1000px) {
+  .navbar__container h2 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+}
 .navbar__container h5 {
   margin-left: 1em;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__container h5 {
     margin-left: 3em;
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2.6px;
+  }
+  .navbar__container h5 span {
+    font-weight: 400;
   }
 }
 .navbar__container__right {
@@ -74,11 +86,20 @@
     gap: 1em;
     margin-left: 4em;
   }
+  .navbar__container__menu ul li {
+    font-size: 16px;
+    font-weight: 600;
+  }
 }
 
 .header {
   padding: 75px 20px;
   background-color: #333333;
+}
+@media only screen and (min-width: 1000px) {
+  .header {
+    padding: 0 20px;
+  }
 }
 .header__container {
   color: #FFFFFF;
@@ -221,14 +242,15 @@
   }
 }
 .about_us__description h5 {
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 2.8px;
   font-weight: 700;
   color: #777777;
   margin-bottom: 32px;
 }
 .about_us__description h1 {
-  font-size: 56px;
+  font-size: 80px;
+  line-height: 90px;
   font-weight: 400;
   font-family: Old Standard TT, sans-serif;
   margin-bottom: 16px;
@@ -238,6 +260,7 @@
   font-weight: 400;
   color: #777777;
   margin-bottom: 24px;
+  max-width: 397px;
 }
 .about_us__description button {
   width: 216px;
@@ -267,6 +290,12 @@
 .about_us__features__feature__item {
   height: 300px;
   position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .about_us__features__feature__item.strongteam {
+    position: relative;
+    top: -30px;
+  }
 }
 .about_us__features__feature__item img {
   margin-top: 54px;
@@ -303,6 +332,12 @@
 }
 .about_us__features__feature__item.dark p {
   color: white;
+}
+@media only screen and (min-width: 1000px) {
+  .about_us__features__feature__item.dark {
+    position: relative;
+    top: 30px;
+  }
 }
 .about_us__features__feature:nth-child(1) {
   margin-bottom: 45px;
