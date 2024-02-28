@@ -540,10 +540,9 @@
 }
 @media only screen and (min-width: 1000px) {
   .facilities__grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 47px;
+    display: grid;
+    margin: 61px 15% 47px 15%;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   }
 }
 .facilities__grid__card {
@@ -611,7 +610,9 @@
     display: flex;
     justify-content: space-between;
     padding: 80px;
-    margin: 0 15%;
+    margin: 0 auto;
+    width: calc(80% - 10px);
+    max-width: 1000px;
   }
 }
 .stats__card {
@@ -639,7 +640,10 @@
 @media only screen and (min-width: 1000px) {
   .footer__container {
     display: flex;
-    margin: 100px 400px;
+    justify-content: space-between;
+    margin: 230px auto 100px auto;
+    width: calc(80% - 10px);
+    max-width: 1000px;
   }
 }
 .footer__container__description {
@@ -648,7 +652,7 @@
 @media only screen and (min-width: 1000px) {
   .footer__container__description {
     margin-top: unset;
-    max-width: 25%;
+    max-width: 27%;
     text-align: left;
   }
   .footer__container__description--logo {
@@ -700,30 +704,38 @@
   margin: 0 20px;
   list-style-position: inside;
 }
-@media only screen and (min-width: 1000px) {
-  .footer__container__services {
-    margin-left: 60px;
-  }
-}
 .footer__container__services h5 {
   font-family: Old Standard TT, sans-serif;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 1000px) {
+  .footer__container__services h5 {
+    margin-bottom: 31px;
+  }
+}
 .footer__container__services ul {
   font-size: 16px;
   font-weight: 400;
   line-height: 48px;
   color: #777777;
-  columns: 2;
 }
 .footer__container__services li {
   list-style-type: "+ ";
   max-width: 158px;
 }
+.footer__container__services__lists {
+  display: flex;
+  gap: 25px;
+}
 .footer__container__contact_us {
   margin: 0 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .footer__container__contact_us {
+    margin: unset;
+  }
 }
 .footer__container__contact_us h5 {
   font-family: Old Standard TT, sans-serif;
@@ -731,6 +743,11 @@
   font-weight: 400;
   margin-bottom: 34px;
   margin-top: 32px;
+}
+@media only screen and (min-width: 1000px) {
+  .footer__container__contact_us h5 {
+    margin-top: unset;
+  }
 }
 .footer__container__contact_us__item {
   display: flex;
