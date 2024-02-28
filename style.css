@@ -25,7 +25,11 @@
 .navbar__container {
   display: flex;
   align-items: center;
-  height: 90px;
+}
+@media only screen and (min-width: 1000px) {
+  .navbar__container {
+    height: 90px;
+  }
 }
 @media only screen and (min-width: 1000px) {
   .navbar__container__button_menu {
@@ -280,11 +284,18 @@
   margin-bottom: 32px;
 }
 .about_us__description h1 {
-  font-size: 80px;
-  line-height: 90px;
+  font-size: 56px;
   font-weight: 400;
   font-family: Old Standard TT, sans-serif;
   margin-bottom: 16px;
+  letter-spacing: -1.2px;
+}
+@media only screen and (min-width: 1000px) {
+  .about_us__description h1 {
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: -2.4px;
+  }
 }
 .about_us__description p {
   font-size: 14px;
