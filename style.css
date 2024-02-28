@@ -609,7 +609,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .menu {
-    margin: 0px auto 100px auto;
+    margin: 0px auto 120px auto;
     width: calc(80% - 10px);
     max-width: 1100px;
     overflow: visible;
@@ -667,6 +667,10 @@
   .menu__slider__container {
     min-width: unset;
   }
+  .menu__slider__container__item:hover {
+    background-color: #222222;
+    color: #FFFFFF;
+  }
 }
 .menu__slider__container__item {
   display: flex;
@@ -684,7 +688,7 @@
 .menu__slider__container__item img {
   width: 120px;
   height: 120px;
-  background-color: grey;
+  background-color: #EDEDED;
 }
 .menu__slider__container__item__description {
   width: 50%;
@@ -702,10 +706,6 @@
   font-size: 14px;
   line-height: 22px;
   font-weight: 400;
-}
-.menu__slider__container__item:hover {
-  background-color: #222222;
-  color: #FFFFFF;
 }
 .menu__pagination {
   text-align: right;
@@ -735,6 +735,47 @@
 }
 .menu__pagination__right {
   margin-left: 16px;
+}
+
+.slider__container {
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  max-width: 335px;
+  height: 335px;
+  margin-bottom: 24px;
+}
+@media only screen and (min-width: 1000px) {
+  .slider__container {
+    width: calc(80% - 10px);
+    max-width: 1100px;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 120px;
+  }
+}
+.slider__container__page {
+  min-width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .slider__container__page {
+    min-width: unset;
+    width: 335px;
+  }
+}
+.slider__container__page img {
+  width: 100%;
+  height: 100%;
+  background-color: #EDEDED;
+}
+.slider__dots_selection {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media only screen and (min-width: 1000px) {
+  .slider__dots_selection {
+    display: none;
+  }
 }
 
 .stats {
