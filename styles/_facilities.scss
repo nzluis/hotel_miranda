@@ -31,7 +31,7 @@
 
         @media only screen and (min-width: 1000px) {
             display: grid;
-            margin: 61px auto 90px auto;
+            margin: 61px auto 40px auto;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             max-width: 1170px;
         }
