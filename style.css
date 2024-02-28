@@ -108,7 +108,7 @@
     padding-bottom: 123px;
     margin: 0 auto;
     width: calc(80% - 10px);
-    max-width: 900px;
+    max-width: 1100px;
   }
   .header__container h5 {
     font-size: 14px;
@@ -117,7 +117,7 @@
   .header__container h1 {
     font-size: 120px;
     font-weight: 400;
-    width: 90%;
+    width: 70%;
   }
   .header__container button {
     display: inline;
@@ -138,7 +138,7 @@
   .date_checker__container {
     margin: 0 auto;
     width: calc(80% - 10px);
-    max-width: 900px;
+    max-width: 1100px;
     display: flex;
   }
 }
@@ -207,7 +207,7 @@
   .about_us {
     margin: 120px auto;
     width: calc(80% - 10px);
-    max-width: 900px;
+    max-width: 1100px;
     display: flex;
     gap: 80px;
     flex-direction: row-reverse;
@@ -541,8 +541,9 @@
 @media only screen and (min-width: 1000px) {
   .facilities__grid {
     display: grid;
-    margin: 61px 15% 47px 15%;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    margin: 61px auto 47px auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    max-width: 1100px;
   }
 }
 .facilities__grid__card {
@@ -552,7 +553,7 @@
 }
 @media only screen and (min-width: 1000px) {
   .facilities__grid__card {
-    max-width: 370px;
+    max-width: 350px;
     min-width: unset;
   }
 }
@@ -612,7 +613,7 @@
     padding: 80px;
     margin: 0 auto;
     width: calc(80% - 10px);
-    max-width: 1000px;
+    max-width: 1100px;
   }
 }
 .stats__card {
@@ -643,7 +644,7 @@
     justify-content: space-between;
     margin: 230px auto 100px auto;
     width: calc(80% - 10px);
-    max-width: 1000px;
+    max-width: 1100px;
   }
 }
 .footer__container__description {
@@ -786,7 +787,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: calc(80% - 10px);
-    max-width: 1000px;
+    max-width: 1100px;
   }
 }
 .footer__copyright__container :nth-child(1) {
