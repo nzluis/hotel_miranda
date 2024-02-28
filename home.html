@@ -10,6 +10,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
     <title>Hotel Miranda</title>
 </head>
@@ -223,21 +226,21 @@
         <div class="menu__slider">
             <div class="menu__slider__container">
                 <div class="menu__slider__container__item">
-                    <img src="" alt="">
+                    <img src="./assets/eggs-4264639_640.jpg" alt="eggs and bacon">
                     <div class="menu__slider__container__item__description">
                         <h3>Eggs & Bacon</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
                 <div class="menu__slider__container__item">
-                    <img src="" alt="">
+                    <img src="./assets/monika-grabkowska-J6xcKonS4nM-unsplash.jpg" alt="tea cup">
                     <div class="menu__slider__container__item__description">
                         <h3>Tea or Coffee</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
                 <div class="menu__slider__container__item">
-                    <img src="" alt="">
+                    <img src="./assets/micheile-henderson-OwvydDkjynM-unsplash.jpg" alt="oatmeal">
                     <div class="menu__slider__container__item__description">
                         <h3>Chia Oatmeal</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
@@ -246,21 +249,21 @@
             </div>
             <div class="menu__slider__container">
                 <div class="menu__slider__container__item">
-                    <img src="" alt="">
+                    <img src="./assets/cocobols-ydxt6NPMs78-unsplash.jpg" alt="fruit bowl">
                     <div class="menu__slider__container__item__description">
                         <h3>Fruit Parfait</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
                 <div class="menu__slider__container__item">
-                    <img src="" alt="">
+                    <img src="./assets/yulia-khlebnikova-o_O75f28GiA-unsplash.jpg" alt="marmalade in a jar">
                     <div class="menu__slider__container__item__description">
                         <h3>Marmalade Selection</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                     </div>
                 </div>
                 <div class="menu__slider__container__item">
-                    <img src="" alt="">
+                    <img src="./assets/tobias-QZsNoluSh6U-unsplash.jpg" alt="cheese selections">
                     <div class="menu__slider__container__item__description">
                         <h3>Cheese Selection</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
@@ -275,15 +278,18 @@
         </div>
     </section>
     <section class="slider">
-        <div class="slider__container">
-            <div class="slider__container__page"><img src="" alt="" /></div>
-            <div class="slider__container__page"><img src="" alt="" /></div>
-            <div class="slider__container__page"><img src="" alt="" /></div>
-        </div>
-        <div class="slider__dots_selection">
-            <img src="./assets/Ellipse 6.svg" alt="dot icon">
-            <img src="./assets/Ellipse 5.svg" alt="dot icon">
-            <img src="./assets/Ellipse 6.svg" alt="dot icon">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./assets/christina-rumpf-gUU4MF87Ipw-unsplash.jpg"
+                        alt="fried vegetables" /></div>
+                <div class="swiper-slide">
+                    <img src="./assets/cook-2364221_640.jpg" alt="fresh food" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/meal-5921491_640.jpg" alt="salad" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
     <section class="stats">
