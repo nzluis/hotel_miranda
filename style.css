@@ -1362,6 +1362,74 @@
   }
 }
 
+.offers {
+  margin: 40px 20px 60px 20px;
+}
+.offers__room img {
+  width: 100%;
+  height: 162px;
+  object-fit: cover;
+  object-position: bottom;
+}
+.offers__room__description {
+  margin: 16px 20px 32px 20px;
+}
+.offers__room__description h5 {
+  font-family: Archivo, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: 2.8px;
+  color: #777777;
+  margin-bottom: 12px;
+}
+.offers__room__description h3 {
+  font-family: Old Standard TT, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+}
+.offers__room__description p {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 24px;
+}
+.offers__room__description ul {
+  list-style-type: none;
+  list-style-position: inside;
+  column-count: 2;
+}
+.offers__room__description ul :nth-child(5),
+.offers__room__description ul :nth-child(10) {
+  margin-bottom: 25px;
+}
+.offers__room__description ul li {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-family: 15px;
+  line-height: 17px;
+  color: #777777;
+  white-space: nowrap;
+  margin-bottom: 17px;
+}
+.offers__room__description ul img {
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.offers__room__description button {
+  padding: 22px 68px;
+}
+.offers__room:nth-last-child {
+  margin-bottom: 500px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
