@@ -1536,6 +1536,117 @@
   }
 }
 
+.popular_list {
+  text-align: center;
+  padding: 48px 20px;
+  background-color: #222222;
+}
+.popular_list h5 {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  color: #BDAC8D;
+}
+.popular_list h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: Old Standard TT, sans-serif;
+  margin: 25px 0 48px 0;
+  color: #FFFFFF;
+}
+.popular_list__slider {
+  position: relative;
+  height: 230px;
+  width: 100%;
+  background-color: #E5E5E5;
+  background-size: cover;
+}
+.popular_list__slider--left, .popular_list__slider--right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1000;
+  width: 32px;
+  height: 32px;
+}
+.popular_list__slider--left {
+  left: 0;
+}
+.popular_list__slider--right {
+  right: 0;
+}
+.popular_list__description {
+  position: relative;
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+}
+@media only screen and (min-width: 1000px) {
+  .popular_list__description__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 60%;
+  }
+  .popular_list__description h3 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 15px;
+  }
+  .popular_list__description h3 span {
+    font-size: 16px;
+  }
+}
+.popular_list__description__icons {
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: -20px;
+  margin: 0 40px;
+  padding: 12px 0;
+}
+.popular_list__description__icons img {
+  vertical-align: middle;
+}
+.popular_list__description__text {
+  margin: 0 20px;
+}
+.popular_list__description h4 {
+  font-family: Old Standard TT, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.7px;
+  margin-bottom: 16px;
+}
+.popular_list__description p {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #777777;
+  margin-bottom: 12px;
+}
+.popular_list__description h3 {
+  font-family: Archivo, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #BEAD8E;
+  display: inline;
+}
+.popular_list__description h3 span {
+  font-size: 16px;
+}
+.popular_list__description h6 {
+  font-family: Archivo, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #BDBDBD;
+  display: inline;
+  margin-left: 15px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
