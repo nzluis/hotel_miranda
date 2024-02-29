@@ -10,6 +10,7 @@
 @use "./styles/slider";
 @use "./styles/stats";
 @use "./styles/footer";
+@use "./styles/intro_about";
 
 * {
     box-sizing: border-box;
@@ -30,4 +31,14 @@ button {
     font-weight: 700;
     cursor: pointer;
     background-color: #BEAD8E;
+}
+
+a:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: inherit;
+    color: inherit;
 }

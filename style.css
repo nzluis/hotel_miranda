@@ -1057,6 +1057,21 @@
   }
 }
 
+.intro_about {
+  text-align: center;
+}
+.intro_about iframe {
+  max-width: 335px;
+  height: 186px;
+  margin-bottom: 36px;
+  margin-top: 60px;
+}
+@media only screen and (min-width: 1000px) {
+  .intro_about iframe {
+    max-width: 1170px;
+    height: 650px;
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1076,6 +1091,16 @@ button {
   font-weight: 700;
   cursor: pointer;
   background-color: #BEAD8E;
+}
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 /*# sourceMappingURL=style.css.map */
