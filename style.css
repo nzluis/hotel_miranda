@@ -691,12 +691,35 @@
   font-weight: 400;
   line-height: 24px;
   max-width: 75%;
-  margin-bottom: 32px;
+  margin-bottom: 43px;
 }
 @media only screen and (min-width: 1000px) {
   .facilities__grid__card p {
-    margin-bottom: 52px;
+    margin-bottom: 43px;
   }
+}
+.facilities.dark {
+  background-color: #222222;
+  color: #FFFFFF;
+  padding-bottom: 120px;
+}
+.facilities.dark h5 {
+  padding-top: 48px;
+  color: #FFFFFF;
+}
+@media only screen and (min-width: 1000px) {
+  .facilities.dark h5 {
+    padding-top: 120px;
+  }
+}
+.facilities.dark .dark {
+  margin-bottom: 0;
+}
+.facilities.dark__grid__card {
+  background-color: #292929;
+}
+.facilities.dark__grid__card--number {
+  color: white;
 }
 .facilities__dots_selection {
   margin-bottom: 64px;
@@ -1085,11 +1108,11 @@
 }
 
 .intro_about {
-  margin: 60px 20px;
+  margin: 60px 20px 80px 20px;
 }
 @media only screen and (min-width: 1000px) {
   .intro_about {
-    margin: 120px auto 160px auto;
+    margin: 120px auto;
     width: calc(80% - 10px);
     max-width: 1170px;
   }
