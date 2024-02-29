@@ -6,9 +6,35 @@
         padding: 0 20px;
     }
 
+    &.pages {
+        padding-bottom: 96px;
+
+        @media only screen and (min-width: 1000px) {
+            padding-bottom: 83px;
+        }
+    }
+
+    &.pages.headerRooms {
+        padding-bottom: 81px;
+    }
+
     &__container {
         color: #FFFFFF;
         position: relative;
+
+        &.pages {
+            @media only screen and (min-width: 1000px) {
+                padding-bottom: 0;
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+
+            &.headerRooms h6 {
+                bottom: -81px;
+            }
+        }
 
         h5 {
             width: 75%;
@@ -42,10 +68,10 @@
             background-color: #FFFFFF;
             position: absolute;
             right: 0;
-            bottom: -115px;
+            bottom: -95px;
 
             @media only screen and (min-width: 1000px) {
-                bottom: 0;
+                bottom: -83px;
                 padding: 21px 51px;
             }
 
@@ -60,6 +86,10 @@
 
             &:nth-last-of-type(2) {
                 margin-bottom: 24px;
+
+                @media only screen and (min-width: 1000px) {
+                    margin-bottom: 0;
+                }
             }
 
             &:nth-last-of-type(1) {
