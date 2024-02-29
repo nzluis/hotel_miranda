@@ -1365,14 +1365,103 @@
 .offers {
   margin: 40px 20px 60px 20px;
 }
+@media only screen and (min-width: 1000px) {
+  .offers {
+    margin: 120px auto;
+    width: calc(80% - 10px);
+    max-width: 1170px;
+  }
+}
+.offers__room {
+  position: relative;
+}
+.offers__room__image_container {
+  position: relative;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__room__image_container {
+    position: unset;
+  }
+}
+.offers__room h4 {
+  position: absolute;
+}
+.offers__room--before {
+  font-family: Archivo, sans-serif;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 25px;
+  color: #BEAD8E;
+  bottom: 46px;
+  right: 20px;
+  text-decoration: line-through;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__room--before {
+    z-index: 3;
+    top: 570px;
+    right: 122px;
+    font-size: 30px;
+  }
+}
+.offers__room--before span {
+  text-decoration: unset;
+  font-size: 11px;
+  line-height: 12px;
+}
+.offers__room--after {
+  font-family: Archivo, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  color: #DE5777;
+  bottom: 17px;
+  right: 20px;
+  z-index: 100;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__room--after {
+    z-index: 3;
+    top: 620px;
+    right: 122px;
+    font-size: 40px;
+  }
+}
+.offers__room--after span {
+  font-size: 12px;
+  line-height: 13px;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__room--after span {
+    font-size: 16px;
+  }
+}
 .offers__room img {
   width: 100%;
-  height: 162px;
+  height: 250px;
   object-fit: cover;
-  object-position: bottom;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__room img {
+    object-position: bottom;
+    height: 570px;
+  }
 }
 .offers__room__description {
   margin: 16px 20px 32px 20px;
+}
+@media only screen and (min-width: 1000px) {
+  .offers__room__description {
+    margin: 0 60px;
+    padding: 60px;
+    position: relative;
+    top: -60px;
+    background-color: white;
+  }
+  .offers__room__description__text {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .offers__room__description h5 {
   font-family: Archivo, sans-serif;
@@ -1391,6 +1480,13 @@
   letter-spacing: -1.5px;
   margin-bottom: 16px;
 }
+@media only screen and (min-width: 1000px) {
+  .offers__room__description h3 {
+    padding-bottom: 40px;
+    margin-bottom: 36px;
+    border-bottom: 2px solid #ECECEC;
+  }
+}
 .offers__room__description p {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -1399,10 +1495,17 @@
   color: #777777;
   margin-bottom: 24px;
 }
+@media only screen and (min-width: 1000px) {
+  .offers__room__description p {
+    width: 60%;
+    margin-bottom: unset;
+  }
+}
 .offers__room__description ul {
   list-style-type: none;
   list-style-position: inside;
   column-count: 2;
+  column-gap: 10px;
 }
 .offers__room__description ul :nth-child(5),
 .offers__room__description ul :nth-child(10) {
@@ -1426,8 +1529,11 @@
 .offers__room__description button {
   padding: 22px 68px;
 }
-.offers__room:nth-last-child {
-  margin-bottom: 500px;
+@media only screen and (min-width: 1000px) {
+  .offers__room__description button {
+    position: relative;
+    top: -60px;
+  }
 }
 
 * {
