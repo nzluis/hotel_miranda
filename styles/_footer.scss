@@ -38,13 +38,15 @@
             &__social_network {
                 margin: 32px 20px;
                 display: flex;
+                justify-content: flex-start;
+                gap: 20px;
 
                 @media only screen and (min-width: 1000px) {
                     margin: 22px 0 0 0;
                 }
 
                 img {
-                    margin-left: 26px;
+                    // margin-left: 26px;
 
                     &:nth-last-of-type(4) {
                         margin-left: 0;
@@ -53,10 +55,10 @@
 
                 .twitter_container {
                     position: relative;
-                    width: 40px;
+                    min-width: 40px;
                     height: 40px;
                     background-color: #BEAD8E;
-                    margin-left: 26px;
+                    // margin-left: 26px;
 
                     img {
                         position: absolute;
