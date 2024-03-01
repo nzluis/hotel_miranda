@@ -823,7 +823,7 @@
 }
 .menu__slider__container__item__description {
   width: 50%;
-  margin-bottom: 16px;
+  margin-bottom: unset;
 }
 .menu__slider__container__item__description h3 {
   font-family: Old Standard TT, sans-serif;
@@ -832,6 +832,7 @@
   font-weight: 400;
   letter-spacing: -0.72px;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 .menu__slider__container__item__description p {
   font-size: 14px;
@@ -869,7 +870,10 @@
 }
 
 .slider {
+  margin: 0px auto;
   margin-bottom: 60px;
+  width: calc(80% - 10px);
+  max-width: 1170px;
 }
 .slider img {
   object-fit: cover;
@@ -973,24 +977,22 @@
 .footer__container__description__social_network {
   margin: 32px 20px;
   display: flex;
+  justify-content: flex-start;
+  gap: 20px;
 }
 @media only screen and (min-width: 1000px) {
   .footer__container__description__social_network {
     margin: 22px 0 0 0;
   }
 }
-.footer__container__description__social_network img {
-  margin-left: 26px;
-}
 .footer__container__description__social_network img:nth-last-of-type(4) {
   margin-left: 0;
 }
 .footer__container__description__social_network .twitter_container {
   position: relative;
-  width: 40px;
+  min-width: 40px;
   height: 40px;
   background-color: #BEAD8E;
-  margin-left: 26px;
 }
 .footer__container__description__social_network .twitter_container img {
   position: absolute;
