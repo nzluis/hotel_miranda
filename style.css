@@ -1541,27 +1541,60 @@
   padding: 48px 20px;
   background-color: #222222;
 }
-.popular_list h5 {
+@media only screen and (min-width: 1000px) {
+  .popular_list {
+    padding: 68px 0 120px 0;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .popular_list__wrapper {
+    margin: 0px auto;
+    width: calc(80% - 10px);
+    max-width: 1170px;
+  }
+}
+.popular_list__wrapper h5 {
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 2.8px;
   color: #BDAC8D;
 }
-.popular_list h1 {
+.popular_list__wrapper h1 {
   font-size: 40px;
   font-weight: 400;
   font-family: Old Standard TT, sans-serif;
   margin: 25px 0 48px 0;
   color: #FFFFFF;
 }
-.popular_list__slider {
+.popular_list__wrapper__container {
+  display: flex;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1000px) {
+  .popular_list__wrapper__container {
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+}
+.popular_list__wrapper__container__item {
+  min-width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .popular_list__wrapper__container__item {
+    min-width: unset;
+    width: 370px;
+  }
+}
+.popular_list__wrapper__container__item__slider {
   position: relative;
   height: 230px;
   width: 100%;
   background-color: #E5E5E5;
   background-size: cover;
 }
-.popular_list__slider--left, .popular_list__slider--right {
+.popular_list__wrapper__container__item__slider .image--left,
+.popular_list__wrapper__container__item__slider .image--right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1570,35 +1603,34 @@
   width: 32px;
   height: 32px;
 }
-.popular_list__slider--left {
+@media only screen and (min-width: 1000px) {
+  .popular_list__wrapper__container__item__slider .image--left,
+  .popular_list__wrapper__container__item__slider .image--right {
+    display: none;
+  }
+}
+.popular_list__wrapper__container__item__slider .image--left {
   left: 0;
 }
-.popular_list__slider--right {
+.popular_list__wrapper__container__item__slider .image--right {
   right: 0;
 }
-.popular_list__description {
+.popular_list__wrapper__container__item__description {
   position: relative;
   background-color: #FFFFFF;
   padding-bottom: 30px;
 }
 @media only screen and (min-width: 1000px) {
-  .popular_list__description__text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-    max-width: 60%;
-  }
-  .popular_list__description h3 {
+  .popular_list__wrapper__container__item__description h3 {
     font-size: 40px;
     font-weight: 700;
     margin-right: 15px;
   }
-  .popular_list__description h3 span {
+  .popular_list__wrapper__container__item__description h3 span {
     font-size: 16px;
   }
 }
-.popular_list__description__icons {
+.popular_list__wrapper__container__item__description__icons {
   background-color: white;
   display: flex;
   justify-content: space-evenly;
@@ -1607,20 +1639,20 @@
   margin: 0 40px;
   padding: 12px 0;
 }
-.popular_list__description__icons img {
+.popular_list__wrapper__container__item__description__icons img {
   vertical-align: middle;
 }
-.popular_list__description__text {
+.popular_list__wrapper__container__item__description__text {
   margin: 0 20px;
 }
-.popular_list__description h4 {
+.popular_list__wrapper__container__item__description h4 {
   font-family: Old Standard TT, sans-serif;
   font-size: 24px;
   font-weight: 400;
   letter-spacing: -0.7px;
   margin-bottom: 16px;
 }
-.popular_list__description p {
+.popular_list__wrapper__container__item__description p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -1628,17 +1660,17 @@
   color: #777777;
   margin-bottom: 12px;
 }
-.popular_list__description h3 {
+.popular_list__wrapper__container__item__description h3 {
   font-family: Archivo, sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #BEAD8E;
   display: inline;
 }
-.popular_list__description h3 span {
+.popular_list__wrapper__container__item__description h3 span {
   font-size: 16px;
 }
-.popular_list__description h6 {
+.popular_list__wrapper__container__item__description h6 {
   font-family: Archivo, sans-serif;
   font-size: 16px;
   font-weight: 700;
