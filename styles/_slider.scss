@@ -1,5 +1,8 @@
 .slider {
+    margin: 0px auto;
     margin-bottom: 60px;
+    width: calc(80% - 10px);
+    max-width: 1170px;
 
     img {
         object-fit: cover;
