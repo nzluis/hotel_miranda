@@ -94,7 +94,10 @@
 
                 &__description {
                     width: 50%;
-                    margin-bottom: 16px;
+
+                    @media only screen and (min-width: 1000px) {}
+
+                    margin-bottom: unset;
 
                     h3 {
                         font-family: Old Standard TT, sans-serif;
@@ -103,6 +106,7 @@
                         font-weight: 400;
                         letter-spacing: -0.72px;
                         margin-bottom: 12px;
+                        white-space: nowrap;
                     }
 
                     p {
