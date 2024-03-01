@@ -69,3 +69,10 @@ input,
 textarea {
     border: 2.5px solid transparent;
 }
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    appearance: none;
+}

@@ -20,6 +20,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
+    max-width: 1420px;
   }
 }
 .navbar__container {
@@ -38,6 +39,7 @@
 }
 .navbar__container h2 {
   margin-left: 1em;
+  font-family: Archivo, sans-serif;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__container h2 {
@@ -47,6 +49,7 @@
 }
 .navbar__container h5 {
   margin-left: 1em;
+  font-family: Archivo, sans-serif;
 }
 @media only screen and (min-width: 1000px) {
   .navbar__container h5 {
@@ -69,6 +72,7 @@
 }
 .navbar__container__menu ul {
   list-style-type: none;
+  font-family: Archivo, sans-serif;
 }
 @media only screen and (max-width: 1000px) {
   .navbar__container__menu {
@@ -1848,6 +1852,13 @@ textarea:focus {
 input,
 textarea {
   border: 2.5px solid transparent;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /*# sourceMappingURL=style.css.map */
